@@ -1,0 +1,204 @@
+﻿/*
+* FILE             : hilo.css
+* PROJECT          : PROG2001 - Assignment #4
+* PROGRAMMER       : Josh Braga 5895818 and Balazs Karner 8646201
+* FIRST VERSION    : 2020-11-05
+* DESCRIPTION      : This file contains all the styles for the hi lo game
+*/
+
+
+
+h1 {
+    font-family: Arial;
+    font-size: 36px;
+    text-align: center;
+    color: White;
+}
+
+h2 {
+    font-family: Arial;
+    font-size: 24px;
+    text-align: center;
+    color: White;
+}
+
+/*
+* Black Ice. (August, 2018). Blue backround with Text Overlay. Pexels https://www.pexels.com/photo/blue-background-with-text-overlay-1314536/
+* The above is a reference to the background image although it is free to use for commercial, and personal use. it is a free stock photo
+*/
+.gameBody {
+    background-image: url("./Images/numbersBlue.jpg");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*
+* Black Ice. (August, 2018). Red backround with Text Overlay. Pexels https://www.pexels.com/photo/lots-of-numbers-1314543/
+* The above is a reference to the background image although it is free to use for commercial, and personal use. it is a free stock photo
+*/
+.winBody {
+    background-image: url("./Images/numbersRed.jpg");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+::placeholder {
+    color: DarkGray;
+    opacity: 1;
+    font-style: italic;
+}
+
+:-ms-input-placeholder {
+    color: DarkGray;
+    font-style: italic;
+}
+
+.labels {
+    font-family: Arial;
+    font-size: 16px;
+    color: White;
+}
+
+.validator {
+    font-family: Arial;
+    font-size: 16px;
+    color: Red;
+}
+
+/* The css orangeButton, orangeButton:Hover, and orangeButton:active was created with assistance from:
+*  Button Generator. (N.D.). Button Genrator. https://www.bestcssbuttongenerator.com/#/14
+*  It was also the same button style used in our assignment 3 the php/cgi zoo
+*/
+.orangeButton {
+    box-shadow: inset 0px 1px 0px 0px #FFF6AF;
+    background: linear-gradient(to bottom, #FFEC24 5%, #DB8C24 100%);
+    background-color: #FFEC24;
+    border-radius: 6px;
+    border: 1px solid #DB8C24;
+    display: inline-block;
+    cursor: pointer;
+    color: #333333;
+    font-family: Arial;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #FFEE66;
+}
+
+    .orangeButton:hover {
+        background: linear-gradient(to bottom, #DB8C24 5%, #FFEC24 100%);
+        background-color: #FFEC24;
+    }
+
+    .orangeButton:active {
+        position: relative;
+        top: 1px;
+    }
+
+/*
+* Tiwane, N. (N.D.). Jumping Input Text. CodeOpen https://codepen.io/nikstech/pen/xmMxpr
+*
+* The below text box styling was adapted from the above source
+*/
+.textBox {
+    font-family: Arial;
+    font-size: 16px;
+    color: #fff;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid White;
+    padding: 8px 0 5px 0;
+    padding: 8px 0 5px 0;
+}
+
+.formContainer {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    border-radius: 15px;
+    transform: translate(-50%,-50%);
+    background-color: rgba(24, 24, 24, 0.9);
+    padding-top: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 100px;
+    width: 350px;
+    height: 150px;
+}
+
+
+
+
+
+
+
+
+/* The navigation menu */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+    /* Navigation links */
+    .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+/* The subnavigation menu */
+.subnav {
+    float: left;
+    overflow: hidden;
+}
+
+    /* Subnav button */
+    .subnav .subnavbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+    }
+
+    /* Add a red background color to navigation links on hover */
+    .navbar a:hover, .subnav:hover .subnavbtn {
+        background-color: red;
+    }
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: red;
+    width: 100%;
+    z-index: 1;
+}
+
+    /* Style the subnav links */
+    .subnav-content a {
+        float: left;
+        color: white;
+        text-decoration: none;
+    }
+
+        /* Add a grey background color on hover */
+        .subnav-content a:hover {
+            background-color: #eee;
+            color: black;
+        }
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+    display: block;
+}

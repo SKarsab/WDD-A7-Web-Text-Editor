@@ -1,0 +1,341 @@
+﻿/*
+* FILE             : SETeditor.css
+* PROJECT          : WDD-A7-ASPNET
+* PROGRAMMER       : Josh Braga 5895818 and Balazs Karner 8646201
+* FIRST VERSION    : 2020-12-10
+* DESCRIPTION      : 
+*       This file contains all the styles for the online text editor.
+*/
+
+
+
+/* 
+*   Coloured page background
+*/
+body 
+{
+    margin: 0px;
+    background-color: #3b4048;
+}
+
+/* 
+*   Editable text area
+*/
+.textbox {
+    border: none;
+    outline: none;
+    font-family: Arial;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    resize: none;
+    height: 610px;
+    width: 1000px;
+    font-size: 18px;
+    display: block;
+}
+
+/* 
+*   Textbox in the navigation bar for "Save As" button
+*/
+.saveAsBox 
+{
+    font-family: Arial;
+    font-size: 16px;
+    width: 210px;
+    color: #fff;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid White;
+    outline: none;
+    margin-top: 15px;
+    margin-left: 5px;
+    padding: 8px 0 5px 0;
+    padding: 8px 0 5px 0;
+    float: left;
+}
+
+/* 
+*   The block for the div
+*/
+.fileNameBar 
+{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-top: -5px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1005px;
+    height: 40px;
+    background-color: #333;
+}
+
+/* 
+*   Text inside the status bar
+*/
+.fileNameBarText 
+{
+    padding-top: 10px;
+    text-align: center;
+    font-family: Arial;
+    font-size: 16px;
+    color: white;
+}
+
+/* 
+*   The block for the div
+*/
+.statusBar 
+{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-top: -15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1005px;
+    height: 40px;
+    background-color: #333;
+}
+
+/* 
+*   Text inside the status bar
+*/
+.statusBarText 
+{
+    padding-top: 10px;
+    text-align: center;
+    font-family: Arial;
+    font-size: 16px;
+    color: red;
+}
+
+/* 
+*   Text inside the status bar
+*/
+.errorText 
+{
+    margin-left: 10px;
+    margin-top: 25px;
+    float: left;
+    font-size: 16px;
+    color: red;
+    text-align: left;
+    text-decoration: none;
+    font-family: Arial;
+}
+
+/* 
+*   REFERENCE: 
+*   W3 Schools. (N.D.). How TO - Subnav https://www.w3schools.com/howto/howto_css_subnav.asp
+*   The following CSS for the navigation bar was adapted from the W3 Schools example
+*/
+.navigationBarText 
+{
+    float: left;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+    font-family: Arial;
+}
+
+/* 
+*   Navigation menu 
+*/
+.navigationBar 
+{
+    overflow: hidden;
+    background-color: #333;
+}
+
+    /* 
+    *   Buttons in the navigation menu 
+    */
+    .navigationBar button 
+    {
+        float: left;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        padding: 20px 16px 20px 16px;
+        text-decoration: none;
+        background-color: #333;
+        border: none;
+        outline: none;
+    }
+
+        /* 
+        *   Turn orange on hover 
+        */
+        .navigationBar button:hover 
+        {
+            background-color: #e78200;
+        }
+
+        /* 
+        *   Bump on click
+        */
+        .navigationBar button:active 
+        {
+            transform: translateY(4px);
+        }
+
+    /* 
+    *   Select drop down list in navigation menu 
+    */
+    .navigationBar select 
+    {
+        width: 200px;
+        float: left;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        padding: 20px 16px 20px 16px;
+        text-decoration: none;
+        background-color: #333;
+        border: none;
+        outline: none;
+    }
+
+        /* 
+        *   Turn orange and bumpon click
+        */
+        .navigationBar select:active 
+        {
+            background-color: #e78200;
+        }
+
+        /* 
+        *   Turn orange on focus
+        */
+        .navigationBar select:focus 
+        {
+            background-color: #e78200;
+        }
+
+        /* 
+        *   Turn orange on hover
+        */
+        .navigationBar select:hover 
+        {
+            background-color: #e78200;
+        }
+
+.footerPadding {
+    margin-top: 20px;
+    height: 160px;
+}
+
+/* 
+*   REFERENCE: 
+*   Scanfcode. (2017). Footer Template https://codepen.io/scanfcode/pen/MEZPNd 
+*   The following CSS for the footer was adapted from the Scanfcode example
+*/
+.editorFooter 
+{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 170px;
+    color: #737373;
+    text-align: left;
+    font-family: Arial;
+    background-color: #333;
+    font-size: 16px;
+    text-align: left;
+}
+
+    /* 
+    *   All paragraphs in the footer
+    */
+    .editorFooter p 
+    {
+        margin-left: 200px;
+        margin-bottom: -25px;
+    }
+
+    /* 
+    *   All hr (horizontal rulers) in the footer
+    */
+    .editorFooter hr 
+    {
+        margin-top: 35px;
+        margin-bottom: -10px;
+        margin-left: 200px;
+        margin-right: 150px;
+        border-top-color: #bbb;
+        opacity: 0.5;
+    }
+
+/* 
+*   White ABOUT header in the footer
+*/
+.footerHeading 
+{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 200px;
+    text-align: left;
+    color: white;
+    font-size: 18px;
+    font-family: Arial;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* 
+*   Company Logo position in the footer
+*/
+.footerLogo 
+{
+    position: fixed;
+    left: 0px;
+    bottom: -10px;
+}
+
+/* 
+*   Extra image position in the bottom right in the footer
+*/
+.cornerLogo 
+{
+    position: fixed;
+    right: -65px;
+    bottom: -40px;
+}
+
+/* 
+*   REFERENCE: 
+*   W3Schools. (N.D.). How TO - Custom Scrollbar https://www.w3schools.com/howto/howto_css_custom_scrollbar.asp
+*   The following CSS for the scrollbar styling was adapted from the W# Schools example
+*/
+::-webkit-scrollbar 
+{
+    width: 10px;
+}
+
+/* 
+*   The background track of the scrollbar
+*/
+::-webkit-scrollbar-track 
+{
+    background: #b3b3b3;
+}
+
+/* 
+*   Scrollbar
+*/
+::-webkit-scrollbar-thumb 
+{
+    background: #8c8c8c;
+}
+
+    /* 
+    *   Scrollbar colour on hover
+    */
+    ::-webkit-scrollbar-thumb:hover 
+    {
+        background: #333;
+    }
