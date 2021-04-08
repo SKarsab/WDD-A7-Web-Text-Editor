@@ -1,4 +1,4 @@
-# WDD-A7-Web-Text-Editor
+# Web-Text-Editor
 
 SETeditor was created with free for use assets from Icons8. The project is purely academic, and we do not own any assets displayed.
 
